@@ -112,7 +112,7 @@ class CartController extends Controller
                  ]
              );
 
-             $pay_jp_secret = env('PAYJP_SECRET_KEY');
+        $pay_jp_secret = env('PAYJP_SECRET_KEY');
          \Payjp\Payjp::setApiKey($pay_jp_secret);
  
          $user = Auth::user();
